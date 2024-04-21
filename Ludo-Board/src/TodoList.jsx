@@ -1,9 +1,15 @@
 import { useState } from "react";
 import { v4 as uuidv4 } from 'uuid';
+import "./TodoList.css";
 
 
 export default function TodoList() {
-    let [Todos, setTodos] = useState([{task:"Study", id:uuidv4()}]);
+let styles = {
+
+    
+}
+
+    let [Todos, setTodos] = useState([{task:"Study", id:uuidv4(),isDone:false}]);
     let [newTodo, setNewTodo] = useState("");
 
     let addNewTask=()=>{
@@ -18,8 +24,27 @@ export default function TodoList() {
         // console.log(event.target.value);
     }
 
+    let markAllDone=(event)=>{
+       setTodos((prevTodos)=> prevTodos.map((todo)=>{
+            return {
+                ...todo, isDone:!todo.isDone
+            };
+        })
+    )}
+    
+    let markAsDone=(id)=>{
+        setTodos((prevTodos)=>{
+            return prevTodos.map((todo)=>{
+                if(todo.id===id){
+                    return {...todo, isDone:!todo.isDone};
+                }
+                return todo;
+            })
+        })
+    }
+
     return (    
-        <div>
+        <div className="TodoList">
             <input type="text" placeholder="add a task" value={newTodo} onChange={updateTodoValue} /><br /> <br />
             <button onClick={addNewTask} >Add Task</button>
             <br /> <br />
@@ -28,14 +53,18 @@ export default function TodoList() {
             <ul>
                 {
                     Todos.map((todo)=>(
-                    <li key={todo.id}>
-                        <span>{todo.task}</span>
+                    <li key={todo.id} className="todo" >
+                        <span style={todo.isDone ? {color:"green"} : {color:"red"}}>{todo.task}</span>
                         &nbsp;&nbsp;&nbsp;
-                        <button onClick={()=>{setTodos((prevTodos)=>prevTodos.filter((t)=>t.id!==todo.id))}}>Delete</button>
+                        <button onClick={()=>{setTodos((prevTodos)=>prevTodos.filter((t)=>t.id!==todo.id))}}>Delete</button> &nbsp;&nbsp;&nbsp;
+                        <button onClick={()=>markAsDone(todo.id)}>Mark As Done</button> &nbsp;&nbsp;&nbsp;
+                        
                     </li>
                 ))
                 }
             </ul>
+            <br /><hr />
+            <button onClick={markAllDone}>Mark All</button>
         </div>
     )
 }
