@@ -4,16 +4,24 @@ import LudoBoard from './LudoBoard.jsx'
 import TodoList from './TodoList.jsx'
 import Lottery from './Lottery.jsx'
 import TicketNum from './TicketNum.jsx'
+import Ticket from './Ticket.jsx'
+import {sum} from './Helper'
+
+let winCondition=(ticket)=>{
+//  return sum(ticket)===15;
+  return ticket.every((num)=> num===ticket[0]);
+};
 
 function App() {
   return ( 
     <>
-        {/* <LudoBoard/> */}
+        {/* <LudoBoard/> */} 
         {/* <TodoList/> */}
-        {/* <Lottery/> */}
-        <TicketNum num={5} />
-        <TicketNum num={4} />
-        <TicketNum num={1} />
+        <Lottery n={3}  winCondition={winCondition} />
+        {/* <TicketNum/> */}
+        {/* <Ticket ticket={[0,1,2]} /> */}
+        
+  
     </>
   )
 
