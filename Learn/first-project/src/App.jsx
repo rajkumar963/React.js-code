@@ -10,6 +10,11 @@ import Student from './components/Student'
 import { useState } from 'react'
 import Input from './components/Input'
 import Checkbox from './components/Checkbox'
+import Radio from './components/Radio'
+import Loop from './components/Loop'
+import ReuseComponent from './components/ReuseComponent'
+import Clock from './components/Clock'
+import NestedLoop from './components/NestedLoop'
 
 function App() {
   // let username = "Jyoti Thakur and Tushar Pal"
@@ -43,10 +48,20 @@ function App() {
       <hr />
       {std && <Student std={std} />}
       <button onClick={() => setStd("jyoti Pal")}>Change Student</button>
-<hr />
+      <hr />
       <Input />
-<hr />
+       <hr />
       <Checkbox />
+       <hr />
+      <Radio />
+      <hr />
+      <Loop />
+      <hr />
+      <ReuseComponent />
+      <hr />
+      <Clock />
+      <hr />
+      <NestedLoop />
     </>
   )
 }
