@@ -2,6 +2,7 @@
 import './App.css'
 import UncontolledCompo from './components/UncontolledCompo'
 import UseFormSubmit1 from './components/UseFormSubmit1'
+import UseTransition from './components/UseTransition'
 
 function App() {
 
@@ -10,6 +11,9 @@ function App() {
       <UncontolledCompo />
       <hr />
       <UseFormSubmit1 />
+      <hr />
+      <UseTransition />
+      <hr />
     </>
   )
 }
