@@ -8,8 +8,9 @@ function App() {
 
   return (
     <>
-     <UseCustomHook />
+      <UseCustomHook />
       <ContextAPI />
+      
     </>
   )
 }
