@@ -1,0 +1,50 @@
+
+
+{
+    "posts": [
+        {
+            "id": 1,
+            "name": "Leanne Graham",
+            "age": 20,
+            "email": "example@example.com",
+            "gender" :"male"   
+            
+        },
+        {
+            "id": 2,
+            "name": "jyoti thakur",
+            "age": 21,
+            "email": "example@example.com",
+            "gender": "female"    
+        },
+        {
+            "id": 3,
+            "name": "Tushar Pal",
+            "age": 22,
+            "email": "tushar@example.com",
+            "gender": "male"    
+        },
+        {
+            "id": 4,
+            "name": "Rohit",
+            "age": 23,
+            "email": "rohit@example.com",
+            "gender": "male"    
+        },
+        {
+            "id": 5,
+            "name": "Pammi Kumari",
+            "age": 22,
+            "email": "pammi@example.com",
+            "gender": "female"    
+        },{
+            "id": 6,
+            "name": "Rajkumar",
+            "age": 22,
+            "email": "rajkumar@example.com",
+            "gender": "male"
+        }
+    
+    ]
+   
+}
