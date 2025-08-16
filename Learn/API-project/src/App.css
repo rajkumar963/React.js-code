@@ -40,3 +40,56 @@
 .read-the-docs {
   color: #888;
 }
+
+.menu{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin: 10px;
+    background-color: #c7bfbf;
+}
+
+.useradd{
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.useradd input{
+  width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 5px;
+}
+
+.useradd button{
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: blue;
+    color: #fff;
+    cursor: pointer;
+}
+
+.useradd button:hover{
+    background-color: #0730ab;
+    color: #fff;
+    cursor: pointer;
+}
