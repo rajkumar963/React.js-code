@@ -12,8 +12,9 @@ function Navbar() {
   return (
     <div className="fixed top-0 left-0 z-10 flex w-full justify-between items-center px-4 sm:px-6 lg:px-10 py-3 bg-transparent">
       {/* ===== Logo ===== */}
-      <div onClick={()=>{ navigate('/')}} className=" cursor-pointer">
-        <svg
+      <div onClick={()=>{ navigate('/')}} className=" h-30 w-30 cursor-pointer mt-[-20px]">
+        <img src="https://res.cloudinary.com/dsdcta1sr/image/upload/v1758190324/vs_logo-black_hvqgct.png" alt="visionloom logo" />
+        {/* <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-8 sm:h-8 md:h-12 lg:h-10 xl:h-10 w-auto"
           viewBox="0 0 103 44"
@@ -37,7 +38,7 @@ function Navbar() {
                M18.4688864,25.3437696 L26.7045278,43.9278953 L36.2761871,43.9278953
                L28.1676325,25.3375497 L18.4688864,25.3437696 Z"
           />
-        </svg>
+        </svg> */}
       </div>
 
       {/* ===== Hamburger Button ===== */}
@@ -54,6 +55,7 @@ function Navbar() {
           h-10 w-14 sm:h-12 sm:w-16 md:h-12 md:w-18
           flex items-center justify-center
           bg-black rounded
+          mt-[-30px]
         "
       >
         {/* Green hover fill */}

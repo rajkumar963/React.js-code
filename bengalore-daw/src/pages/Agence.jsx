@@ -76,6 +76,7 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 import { useRef } from 'react'
+import TechService from '../components/agence/TechService'
 import Footer from '../components/Footer'
 
 const Agence = () => {
@@ -149,7 +150,7 @@ const Agence = () => {
           </div>
         </div>
         <div id='page2' className=" h-screen">
-
+           <TechService />
         </div>
       </div>
       <Footer />
