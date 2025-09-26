@@ -87,20 +87,21 @@ const Agence = () => {
   const imageRef = useRef(null)
 
   const imageArray = [
-    'https://k72.ca/uploads/teamMembers/Carl_480x640-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/Olivier_480x640-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/Lawrence_480x640-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/HugoJoseph_480x640-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/ChantalG_480x640-480x640.jpg',
     'https://k72.ca/uploads/teamMembers/MyleneS_480x640-480x640.jpg',
     'https://k72.ca/uploads/teamMembers/SophieA_480x640-480x640.jpg',
     'https://k72.ca/uploads/teamMembers/Claire_480x640-480x640.jpg',
     'https://k72.ca/uploads/teamMembers/Michele_480X640-480x640.jpg',
     'https://k72.ca/uploads/teamMembers/MEL_480X640-480x640.jpg',
     'https://k72.ca/uploads/teamMembers/CAMILLE_480X640_2-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/MAXIME_480X640_2-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/MEGGIE_480X640_2-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/joel_480X640_3-480x640.jpg',
+    'https://img.freepik.com/premium-photo/visual-film-editor-assembling-rough-cut-refining-it-based-feedback_1327465-16933.jpg',
+    'https://img.freepik.com/premium-photo/two-chairs-are-sitting-table-with-microphone-it_818261-1773.jpg',
+    'https://img.freepik.com/free-photo/reflection-from-laptop-glasses-dark-background_169016-63557.jpg?t=st=1758349650~exp=1758353250~hmac=25f86a5072b8cf4c966f0c5260290267495e84f5d9ac2e527745ecd62549285c&w=1060',
+    'https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg',
+    'https://img.freepik.com/free-photo/futuristic-robot-listening-music-headphones_23-2151073021.jpg?ga=GA1.1.755605691.1757154152&semt=ais_incoming&w=740&q=80',
+    'https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149052117.jpg',
+    'https://img.freepik.com/premium-photo/digital-marketing-seo-photo-concept-idea-with-special-infographic-content_41466-897.jpg?w=1060',
+    'https://img.freepik.com/free-photo/inbound-marketingn-marketing-strategy-commerce-online-concept_53876-13722.jpg?t=st=1758288162~exp=1758291762~hmac=d8eeb31ad4aa9dce31b3773f15867c093c68a45d214be9da0ffa8aa024a8be8c&w=1060',
+
   ]
 
   useGSAP(function () {
@@ -110,7 +111,7 @@ const Agence = () => {
         trigger: imageDivRef.current,
         // markers: true,
         start: 'top 28%',
-        end: 'top -190%',
+        end: 'top -180%',
         pin: true,
         pinSpacing: true,
         pinReparent: true,
@@ -149,7 +150,7 @@ const Agence = () => {
             </div>
           </div>
         </div>
-        <div id='page2' className=" h-screen">
+        <div id='page2' className="  mt-10">
            <TechService />
         </div>
       </div>
