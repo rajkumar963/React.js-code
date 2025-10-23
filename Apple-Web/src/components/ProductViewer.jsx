@@ -1,9 +1,6 @@
-import React from 'react'
 import useMacBookStore from '../store'
 import clsx from 'clsx'
 import {Canvas} from '@react-three/fiber'
-import {OrbitControls} from '@react-three/drei'
-import  MacbookModel14 from './models/Macbook-14'
 import StudioLights from "./three/StudioLights.jsx";
 import ModelSwitcher from './three/modelSwitcher.jsx'
 import { useMediaQuery } from 'react-responsive'
@@ -21,7 +18,7 @@ const ProductViewer = () => {
         <h2>Take a Closer Look.</h2>
 
         <div className='controls'>
-            <p className='info'>MacBookPro {scale} in {color}</p>
+            {/* <p className='info'>MacBook Pro | Available in 14" and 16" in Space Gray and Silver  {scale} in {color}</p> */}
 
             <div className='flex-center gap-5 mt-5'>
                 <div className="color-control">
